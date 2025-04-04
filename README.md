@@ -75,4 +75,24 @@ This repo is my submission for the Momenta Audio Deepfake Detection Take-Home As
    - I’d love the full CD-ADD, maybe ASVspoof 2021, or some real chat audio. A GPU would also speed things up.
 4. **Getting It Live**:
    - I’d use TensorFlow Lite to run it on edge devices, buffer audio for real-time spectrograms, keep an eye on how it drifts, and plan to retrain it now and then.
-  
+
+## Setup Instructions
+1. **Grab the Repo**:
+git clone https://github.com/NOTMUKUNDVINAYAK/Momenta-assignment.git
+cd momenta-assignment
+
+2. **Get the Tools**:
+pip install -r requirements.txt
+
+3. **Download the Dataset**:
+- Grab it from https://openxlab.org.cn/datasets/ylaeo/CD-ADD/tree/main.
+- Download `dataset_TED-LIUM.zip` (1.1 GB) and unzip it to `D:\projects\Momenta project\dataset_ted` (tweak the path if yours is different).
+- For the full dataset, consider `dataset_LibriTTS.zip` 
+
+**Run the Notebook**:
+jupyter notebook momenta_audio_deepfake.ipynb
+
+- Run all the cells to see the training results and that plot!
+
+## Dependencies
+- Check out `requirements.txt` for the full list of packages.
